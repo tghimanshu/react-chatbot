@@ -1,0 +1,16 @@
+.clear {
+    clear: both;
+}
+.chatBubbleLeft {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+}
+.chatBubbleLeft .chat-left {
+    margin-top: 5px;
+    background: orange;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-block;
+}

@@ -1,0 +1,25 @@
+.inputs {
+    margin: 5px auto;
+}
+.inputs #message {
+    width: 92%;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 6px;
+    color: white;
+    display: inline-block;
+    border: 1.5px solid orange;
+    border-radius: 20px;
+    background: rgba(255,180,0,.2);
+}
+.inputs #sendMsg {
+    /* width: 8%; */
+    outline: none;
+    font-size: 1.4rem;
+    padding: 6px;
+    color: white;
+    border: 1.5px solid orange;
+    border-radius: 50%;
+    float: right;
+    background: rgba(255,180,0,1);
+}
