@@ -2,26 +2,23 @@ import React from 'react';
 import ChatBubbleLeft from '../ChatBubbleLeft/ChatBubbleLeft.Component'
 import ChatBubbleRight from '../ChatBubbleRight/ChatBubbleRight.Component'
 import './Chats.css';
-const Chats = () => {
+
+
+const Chats = ({ chats }) => {
+    // console.log(chats[0]);
     return (
         <div className='chats'>
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
-            <ChatBubbleRight />
-            <ChatBubbleRight />
-            <ChatBubbleLeft />
+            {
+                chats.map((chat, i) => {
+                    if(chat.side === 'left'){
+                        return <ChatBubbleLeft key={chat.id} chat={chat} />
+                    }
+                    if(chat.side === 'right'){
+                        return <ChatBubbleRight key={chat.id} chat={chat} />
+                    }
+                    return '';
+                })
+            }   
         </div>
     )
 };

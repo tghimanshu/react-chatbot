@@ -1,10 +1,10 @@
 import React from 'react';
 import './ChatBubbleRight.css';
 
-const ChatBubbleRight = () => {
+const ChatBubbleRight = ({ chat }) => {
     return (
         <div className='chatBubbleRight'>
-            <div className='chat-right'>Chat Bubble Right</div>
+            <div className='chat-right'>{chat.message}</div>
             <div className='clear'></div>
         </div>
     )
