@@ -1,6 +1,7 @@
 .inputs {
   margin: 5px auto;
 }
+
 .inputs #message {
   width: 92%;
   outline: none;
@@ -22,4 +23,13 @@
   border-radius: 50%;
   float: right;
   background: rgba(255, 180, 0, 1);
+}
+
+@media only screen and (max-width: 678px) {
+  .inputs #message {
+    width: 85%;
+  }
+  .inputs #sendMsg {
+    /* font-size: 0.7rem; */
+  }
 }
